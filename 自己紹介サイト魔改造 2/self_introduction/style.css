@@ -1,0 +1,551 @@
+@font-face { 
+    /* ① ここにfont-familyで指定したい名前を書く*/
+    font-family: "myfont"; 
+  
+    /* フォントが置かれているパスを書く */ 
+    src: url("images/LINESeedJP_TTF_Th.ttf") format("truetype") 
+}
+  
+
+
+body {
+    margin: 0;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-family: "myfont";
+    background-color:#EEFFFF;
+}
+
+p {
+    font-weight: normal;
+}
+
+.p_class1 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.container {
+    width: 1024px;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin:auto;
+    padding: 0 10%;
+}
+
+.decoboco {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    }
+
+header {
+    /*background-color: #000000CB;*/
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    color: #33CCFF;
+    font-size: 26px;
+    /*text-align: center;*/
+    line-height: 80px;
+    margin: 0 0 0 20px;
+}
+
+header span {
+    color: #A6ACFF;
+}
+
+header ul {
+    list-style: none;
+    float: right;
+    font-size: 16px;
+    line-height: 80px;
+    margin: 0;
+}
+
+header li {
+    float: left;
+    margin: 0 20px 0 40px;
+}
+
+header li a {
+    color: #fff;
+}
+
+.clear {
+    clear: left;
+}
+
+
+.MV {
+    background-image: url(images/main.jpg);
+    width: 100%;
+    height: 100vh;
+    max-height: 70vh;
+    background-position: 50% 30%;
+    margin-bottom: 80px;
+    background-size: cover;
+}
+
+.explain {
+    /*width: 1050px;*/
+    margin: 0 auto;
+    /*background-color: #000000CB;*/
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.explain-heading {
+    color: #4B52A7;
+    text-align: center;    
+}
+
+.explain-heading2 {
+    text-align: center;    
+}
+
+.concept {
+    /*width: 1050px;*/
+    margin: 0 auto;
+    /*background-color: #000000CB;*/
+    margin-bottom: 40px;
+}
+
+.concept-heading {
+    color: #4B52A7;
+    text-align: center;    
+}
+.h2_concept {
+    color: #33CCFF; 
+    padding-left: 150px;
+    font-family: serif;
+    font-size: 38px;
+}
+.jp {
+    font-size: 24px;
+}
+
+.jp2 {
+    font-size: 34px;
+    color: #33CCFF;
+}
+.jp3 {
+    font-size: 34px;
+    text-align: center;
+}
+
+.jp4 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.red {
+    color: hsl(0, 100%, 60%); 
+}
+
+.back_blue {
+    text-align: center;
+    display: inline-block;
+    background-color: #84d9f5;
+    font-size: 24px;
+}
+
+.jp span{
+    font-size: 14px;
+}
+
+.self p {
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+img.nakano {
+    width: 300px;
+    height: 400px;
+}
+
+.self p span {
+    font-weight: bold;
+}
+
+.self img {
+    width: 600px;
+    vertical-align: bottom;
+}
+
+.image_Introduction {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+.blue {
+    color: #33CCFF;
+}
+
+.contents {
+    color: white;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.heading-2 {
+    font-size: 16px;
+    color: #32839C;
+    margin-bottom: 40px; 
+    border-bottom: 1px solid #B7B7B7;
+}
+
+.fav {
+    color: #33CCFF;
+    margin: 20px 0 10px 0;
+    border: none;
+    font-size: 30px;
+    font-family: serif;
+
+}
+
+.fav span {
+    font-size: 12px;
+    border-bottom: white;
+}
+
+.fav-web {
+    /*height: 350px;*/
+    background-color: #FFE4E1;
+    font-size:16px;
+    border-style : solid;
+    border-radius: 50px;
+    border-color : #33CCFF;
+    width: 32%;
+    text-align: center;
+}
+
+
+.title {
+    border-bottom: 1px solid white;
+    margin: 0 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.fav-list {
+    color: #000000;
+    text-align: center;
+    margin: 30px; 
+
+    /*border-top:  1px solid #FFFFFF;*/
+}
+
+.web-list {
+    color: #000000;
+    text-align: center;
+    margin: 30px; 
+    /*color: #FFE8F6;
+    text-decoration: none;
+    border-top:  1px solid #FFFFFF;*/
+}
+
+.sample {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.heading {
+    /*color: #4B52A7;*/
+    margin-left:10px;
+}
+
+.sample-flex {
+    display: flex;
+}
+
+.samples {  
+    flex: auto; 
+    width: 25%;
+    max-width: 100%;
+}
+
+.samples img {
+    width: 90%;
+}
+
+.samples h4 {
+    font-size: 14px;
+    color: white;
+    background-color: #758BAF;
+    height: 30px;
+    width: 90%;
+    position: relative;
+    bottom: 7px;
+    margin: auto;
+}
+
+.sample-text {
+    display: inline-block;
+    text-align: left;
+    width: 90%;
+    font-size: 12px;
+    margin-top: 0;
+    position: relative;
+    bottom: 7px;
+    padding-top: 4px;
+    margin-bottom: 0;
+}
+
+.contact-form {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.form {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 600px;
+    margin: auto;
+}
+
+.form p {
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.form span {
+    background-color: #32839C;
+    color: white;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 3px 8px 4px 8px;
+}
+
+.form input {
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #B7B7B7;
+    box-sizing: border-box;
+}
+
+.form-list {
+    margin-bottom: 40px;
+}
+
+.send  {
+    background-color: #8AB3DC;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 4px #818694;
+    display: block;
+    height: 40px;
+    width: 300px;
+    line-height: 40px;
+    border:none;
+    margin: auto;
+}
+
+.send2{
+    border-radius: 100px;
+    display: block;
+    width: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #206cf8;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+}
+
+.readmore {
+    position: relative;
+    margin: 50px auto 0;
+    padding: 0 0 75px;
+  }
+  
+  .readmore label {
+    position: absolute;
+    display: table;
+    left: 50%;
+    bottom: 0;
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #333;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .readmore label::before{
+    content: '続きを見る';
+  }
+  
+  .readmore input[type="checkbox"]:checked ~ label::before {
+    content: '元に戻す';
+  }
+  
+  .readmore input[type="checkbox"]{
+    display: none;
+  }
+  
+  .readmore-content {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .readmore input[type="checkbox"]:checked ~ .readmore-content {
+    height: auto;
+  }
+
+.java {
+    text-align: center;
+}
+
+footer {
+    margin-top: 80px;
+    height: 120px;
+    background-color: #8AB3DC;
+    text-align: center;
+}
+footer p {
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/*以下からレスポンシブ対応になります*/
+
+@media(max-width: 768px) {
+
+    * {
+        max-width: 100%;
+    }
+
+    header {
+        height: 48px;
+    }
+
+    img {
+        width: 100%; /* bodyの幅に対する割合 */
+      }
+
+    .logo {
+        font-size: 20px;
+        line-height: 48px;
+    }
+
+    .h2_concept {
+        padding: initial;
+    }
+
+
+    header ul {
+        display: none;
+    }
+
+    .main-img {
+        display: none;
+    }
+
+    main {
+        margin: auto;
+    }
+
+    .MV {
+        background-image: url(images/main_sp.jpg);
+        height: 100vh;
+        max-height: 100vh;
+        margin-bottom: 80px;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+
+    .self { 
+        width: 100%;
+    }
+
+    .jp {
+        font-size: 20px;
+    }
+
+    .en {
+        font-size: 12px;
+    }
+
+    .self p {
+        font-size: 14px;
+    }
+
+    .self img {
+        width: 100%;
+    }
+
+    .contents {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .fav-web {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .gallery {
+        width: 100%;
+    }
+
+    .sample-flex {
+        flex-direction: column;
+    }
+
+    .samples {
+        width: 80%;
+        margin: auto;
+    }
+    .sample {
+        flex-direction: column;
+    }
+    
+
+    .samples img {
+        width: 100%;
+    }
+
+    .samples h4 {
+        width: 100%;
+    }
+
+    .sample-text {
+        width: 100%;
+    }
+
+    .form input {
+        width: 100%;
+    }
+
+    .send {
+        width: 300px;
+    }
+}
